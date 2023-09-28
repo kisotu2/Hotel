@@ -1,0 +1,457 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>The Enchula Hotel</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css" integrity="sha512-riTSV+/RKaiReucjeDW+Id3WlRLVZlTKAJJOHejihLiYHdGaHV7lxWaCfAvUR0ErLYvxTePZpuKZbrTbwpyG9w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        
+        
+    </head> 
+
+<body>
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="t 1.png" alt="">
+            </div>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#rooms">rooms</a></li>
+                    <li><a href="#pages">pages</a></li>
+                    <li><a href="#news">news</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><i class="fa fa-search"></i></li>
+                    <li><button class="primary-btn">BOOK NOW</button></li>
+                </ul>
+              <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+</header>
+<script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight= "0px";
+
+    function menutoggle(){
+        if ( menulist.style.maxHeight== "0px"){
+            menulist.style.maxHeight= "100vh";
+        }
+        else{
+            menulist.style.maxHeight= "0px";
+        }
+
+    }
+</script>
+<section class="home">
+    <div class="content">
+        <div class="owl-carousel owl-theme">
+           <div class="item">
+            <img src="photo-1564501049412-61c2a3083791.jpeg" alt="">
+            <div class="text">
+                <h1>Spend Your Holiday</h1>
+                <p>This is the best destination in Kenya with all the facilities thats suits your comfortability available</p>
+                <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+</section>
+<section class="home">
+    <div class="content">
+        <div class="owl-carousel owl-theme">
+           <div class="item">
+            <img src="dining area 1.jpg" alt="">
+            <div class="text">
+                <h1>Spend Your Holiday</h1>
+                <p>This is the best destination in Kenya with all the facilities thats suits your comfortability available</p>
+                <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots : false,
+    
+    navText : ["<i class = 'fa fa-chevron-left'></i>","<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})</script>
+
+<section class="book">
+    <div class="container flex_space">
+        <div class="text">
+            <h1><span>Book</span> Your Rooms</h1>
+        </div>
+        <div class="form">
+            <form class="grid" >
+                <input type="date" placeholder="Arrival Date">
+                <input type="date" placeholder="Departure Date">
+                <input type="number" placeholder="Adults">
+                <input type="number" placeholder="Children">
+                <input type="submit" value="Check Availability">
+            </form>
+        </div>
+    </div>
+</section>
+<section class="about top">
+    <div class="container flex">
+    <div class="left">
+        <div class="heading">
+            <h1>WELCOME</h1>
+            <h2>The Enchula Hotel</h2>
+        </div>
+        <p>This is one of the few five star hotels in Kenya full of all the relaxation of the body required </p>
+    <button class="primary-btn">ABOUT US</button>
+    </div>
+    <div class="right">
+        <img src="photo-1564501049412-61c2a3083791.jpeg" alt="">
+    </div>
+    </div>
+</section>
+<section class="counter top">
+    <div class="container grid">
+    <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>Customer</span>
+    </div>
+    <div class="box">
+        <h1>1250</h1>
+        <hr>
+        <span>Happy Customer</span>
+    </div>
+    <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>Expert Technician</span>
+    </div>
+    <div class="box">
+        <h1>3550</h1>
+        <hr>
+        <span>Desktop Reaired</span>
+    </div>
+    </div>
+</section>
+
+<section class="rooms">
+    <div class="container top">
+        <div class="heading">
+            <h1>EXPLORE</h1>
+            <h2>OUR ROOMS</h2>
+            <P>Experience the best and the most comfortable sleep that has ever happened to you coutercy of Enchula Hotel</P>
+        </div>
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel owl-theme">
+                <div class="items">
+                    <div class="image">
+                        <img src="bedroom 1.jpeg">
+                    </div>
+                    <div class="text">
+                        <h2>Suporior Rooms 1</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Experience the best night with the perfect view of Narok at the comfort of your comphy bed </p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>$300 <span><br> Per Night</span></h3>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="bedroom 2.jpg">
+                    </div>
+                    <div class="text">
+                        <h2>Suporior Rooms 2</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Experience the best night with the perfect view of Narok at the comfort of your comphy bed </p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>$300 <span><br> Per Night</span></h3>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="bedroom 3.jpeg">
+                    </div>
+                    <div class="text">
+                        <h2>Suporior Rooms 3</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Experience the best night with the perfect view of Narok at the comfort of your comphy bed </p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>$300 <span><br> Per Night</span></h3>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="bedroom 4.jpeg">
+                    </div>
+                    <div class="text">
+                        <h2>Suporior Rooms 4</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Experience the best night with the perfect view of Narok at the comfort of your comphy bed </p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>$300 <span><br> Per Night</span></h3>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="bedroom 5.jpeg">
+                    </div>
+                    <div class="text">
+                        <h2>Suporior Rooms 5</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Experience the best night with the perfect view of Narok at the comfort of your comphy bed </p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>$300 <span><br> Per Night</span></h3>
+                    </div>
+                    </div>
+                
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="bedroom 6.jpeg">
+                    </div>
+                    <div class="text">
+                        <h2>Suporior Rooms 6</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Experience the best night with the perfect view of Narok at the comfort of your comphy bed </p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>$300 <span><br> Per Night</span></h3>
+                    </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="bedroom 7.jpeg">
+                    </div>
+                    <div class="text">
+                        <h2>Suporior Rooms 7</h2>
+                        <div class="rate flex">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <p>Experience the best night with the perfect view of Narok at the comfort of your comphy bed </p>
+                    <div class="button flex">
+                        <button class="primary-btn">BOOK NOW</button>
+                        <h3>$300 <span><br> Per Night</span></h3>
+                    </div>
+                    </div>
+                </div>
+                
+                 </div>   
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots : false,
+    
+    navText : ["<i class = 'fa fa-chevron-left'></i>","<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2,
+            margin : 10,
+        },
+        1000:{
+            items:3
+        }
+    }
+})</script>
+
+<section class="gallery">
+    <div class="container top">
+        <div class="heading">
+            <h1>PHOTOS</h1>
+            <h2>Our Gallery</h2>
+            <p>This is the best destination in Kenya with all the facilities thats suits your comfortability available</p>
+        </div>
+        <div class="content mtop"></div>
+        <div class="owl-carousel owl-carousel owl-theme">
+            <div class="items">
+                <div class="img">
+                    <img src="lobby 1.jpg">
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h3>Hotel Lobby</h3>
+                </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="bedroom 9.jpeg">
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h3>Bedroom</h3>
+                </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="hotel 1.webp">
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h3>Enchula Hotel </h3>
+                </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="hotel 2.jpeg">
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h3>Pool </h3>
+                </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="hotel 3.jpeg">
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h3>The View</h3>
+                </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="hotel 4.jpg">
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h3>Lovers<br> Nest</h3>
+                </div>
+            </div>
+            <div class="items">
+                <div class="img">
+                    <img src="pool area.jpeg">
+                </div>
+                <div class="overlay">
+                    <span class="fa fa-plus"></span>
+                    <h3>Indoor <br>Pool</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots : false,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    
+    navText : ["<i class = 'fa fa-chevron-left'></i>","<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:4,
+            margin : 10,
+        },
+        1000:{
+            items:6
+        }
+    }
+})</script>
+
+
+
+</body>
+</html>
