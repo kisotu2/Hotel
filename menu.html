@@ -1,105 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+ 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon-32x32.png">
-    <title>Mark Kipchumba . Website Developer </title>
     <link rel="stylesheet" href="menu.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+        .container {
+            background-color: beige;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+        }
+
+        .container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(240, 233, 233, 0.2);
+            z-index: -1;
+        }
+
+        header {
+            color: #f9f2f2;
+            background-color: #111112;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .navigation-menu {
+            background-color: #333;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        .navigation-menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .navigation-menu a:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            color: #0f0e0e;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 20%;
+            
+        }
+
+        h1 {
+            font-weight: 1000;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 1%;
+        }
+
+        h3, h4 {
+            font-size: 28px;
+            color: #520202;
+        }
+
+        h5, h6 {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        h6, p {
+            font-size: 18px;
+            font-style: italic;
+            text-indent: 10%;
+        }
+
+        .registration-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .registration-icon {
+            font-size: 48px;
+        }
+
+        /* Add flexbox style for images and links */
+        .menu-links {
+          background-color: white;
+          width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 970px; /* Adjust as needed */
+            margin: 0 auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .column{
+          float: left;
+          width: 45%;
+          padding: 10px;
+          text-align: center;
+        }
+        .menu-links::after{
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        .menu-links a {
+            text-decoration: none;
+            text-align: center;
+            width: 48%; /* Ensure equal spacing between images */
+            padding: 10px;
+            color: #161515;
+            font-size: 18px;
+        }
+
+        .menu-links img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img:hover{
+          box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        .header {
+            background-color: #333;
+        }
+    </style>
 </head>
+
 <body>
-   
-    <div class="intro">
-    <img class="Mark.img" src="Mark 2.png" alt="">
-    <h1>Hello. I am Mark </h1>
-    <h3>A Computer Scientist. </h3>
-    <br>
-
-   <p> I am also a front end web developer.
-     I love volleyball and working on projects. <br>
-    Feel free to talk to me </p>
-   </div>
-
-   <div class="compscience">
-    <img  class="coding" src="https://cdn-icons-png.flaticon.com/128/1159/1159385.png" alt="coding">
-    <h2>What is <a href="https://undergrad.cs.umd.edu/what-computer-science">Computer Science </a></h2>
-
-
-   </div>
-    <div class="poshschool" >
-    <div class="campus">
-
-      <h2 class="campo"> Campus </h2>
-        <p class="Strathmore"> Strathmore University is widely recognized as one of the top universities in East Africa, <br>
-             with a strong reputation for academic excellence and innovative programs
-             that prepare graduates for leadership roles in the region.
-             I took my Computer Science degree at Strathmore University
-        </p>
+    
+  
+<div class="container">
+    <header>
+        
+        WELCOME TO ENCHULA HOTEL
+    </header>
+    <div class="hero">
+        <h2>The perfect place for getaways</h2>
+    </div>
+    <div>
+        <h3>HUNDREDS OF FLAVORS UNDER ONE ROOF</h3>
+        <div class="menu-links">
+          <div class="column">
+            <a href="breakfast.html">
+                <img src="donuts.jpeg" alt="breakfast">
+                Breakfast
+            </a>
+            </div>
+            <div class="column">
+            <a href="big meals.html">
+                <img src="big meal.jpg" alt="big-meal">
+                Big Meals
+            </a>
+            </div>
+            <div class="column">
+            <a href="drinks.html">
+                <img src="fruit juice 2.webp" alt="drinks">
+                Drinks
+            </a>
+            </div >
+            <div class="column">
+            <a href="desserts.html">
+                <img src="desserts 1.webp" alt="desserts">
+                Desserts
+            </a>
+            </div>
+        </div>
     </div>
 </div>
-
-
-<div class="lamborgini" >
-    <div class="projects">
-        <div class="project">
-        <h2>Projects</h2>
-         <p> I have worked on a couple of projects.
-             I have worked in the Lamborgini 
-              website and it is nicely done. <br>
-         We don't just work on moving vehivles but on moving the world .</p>
-
-         <h1 class="logo">Lamborgini</a></h1>
-    </div>
-</div>
-</div>
-
-<div class="volleyball">
-    <div class="volleyball-love">
-      <h1 class="sports">Sports</h1>
-      <p class="voll" >Volleyball is a fun and energetic hobby that can be enjoyed by people of all ages and skill levels.
-         It's a great way to stay active, improve your hand-eye coordination, and build teamwork and
-          communication skills. Whether playing on a beach or indoor court, volleyball is a great way to 
-          socialize with friends and meet new people while having fun.</p>
-
-  </div>
-</div>
-
-<footer>
- <div class="bottom">
-        <h3>© 2023 Mark Kipchumba . Nairobi </h3> <br>
-
-     
-</div>
-
-<div class="Reachme">
-  <h2>Reach Me</h2>
-   <a href="https://github.com/NgenoMark" target="_blank" rel="nofollow noreferrer noopener"> Github</a> <br>
-   <a href="https://www.pinterest.com/kipchumbamark48">Pinterest</a> <br>
-   <a href="https://www.tiktok.com/en/">Tiktok</a> <br>
-   <a href="https://colorhunt.co/palette/7149c6fc2947fe6244ffdeb9">Color Palette</a> <br>
-</div>
-
-<div class="Links">
-  <h2>Links</h2>
-  <a href="https://strathmore.edu/">Strathmore</a> <br>
-  <a href="https://www.lamborghini.com/en-en">Lamborgini</a> <br>
-  <a href="https://olympics.com/en/news/how-to-play-volleyball">Volleyball</a> <br>
-
-</div>
-
-</footer>
-
-
 </body>
 </html>
